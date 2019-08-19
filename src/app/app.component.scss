@@ -1,0 +1,286 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
+@import 'src/assets/css/jqcss.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-smooth: always;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: inherit;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  &:after, &:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-smooth: always;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: inherit;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+}
+
+body {
+  font: 300 13px/1.6 Roboto, Helvetica, Arial;
+  color: #444;
+  position: relative;
+  background: #448aff;
+  height: 100vh;
+  text-align: center;
+  /*background: #3f51b5;*/
+  background: url("http://ali.shahab.pk/blur.php?img=http://ali.shahab.pk/ali-shahab.jpg&x=250") no-repeat center center;
+  background-size: cover;
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+}
+
+#buttons {
+	display: flex;
+	margin: 0 auto;
+	justify-content: space-between;
+	width: 280px;
+}
+
+button {
+	display: block;
+	position: relative;
+	padding: 10px 0;
+  width: 144px;
+  top: 18px;
+  right: 10px;
+border: 1px solid gainsboro;
+	font-size: 20px;
+	letter-spacing: 0.2px;
+	font-weight: 500;
+background-color: white;
+  color: grey;
+  border-right:1px gray
+}
+
+button:focus {
+	display: none;
+}
+
+button:hover {
+	transform: scale(1.03);
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+ul {
+  list-style: none;
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+  border: 0;
+}
+
+.contain1
+{
+  width: 25%;
+  display: inline-block;
+}
+.contain2
+{
+  width: 25%;
+  display: inline-block;
+}
+.contain3
+{
+  width: 25%;
+  display: inline-block;
+}
+
+.btn {
+ 
+ position: relative;
+
+    top: -6px;
+    padding: 1em 2em;
+    border: 1px solid gainsboro;
+  border-radius: 30px;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+
+#contactForm { 
+  display: none;
+z-index: 1;
+  border: 6px solid salmon; 
+  padding: 2em;
+  width: 400px;
+  text-align: center;
+  background: #fff;
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%)
+  
+}
+.blur-filter {
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+}
+
+input, textarea { 
+  margin: .8em auto;
+  font-family: inherit; 
+  text-transform: inherit; 
+  font-size: inherit;
+  
+  display: block; 
+  width: 280px; 
+  padding: .4em;
+}
+textarea { height: 80px; resize: none; }
+
+.formBtn { 
+  width: 140px;
+  display: inline-block;
+  
+  background: teal;
+  color: #fff;
+  font-weight: 100;
+  font-size: 1.2em;
+  border: none;
+  height: 30px;
+}
+.profile-card {
+  width: 300px;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  position: relative;
+  margin: auto;
+  background: rgba(255, 255, 255, 1);
+ 
+ 
+  header {
+    display: block;
+    position: relative;
+    background: rgba(255, 255, 255, 1);
+    text-align: center;
+    padding: 30px 0 20px;
+    z-index: 1;
+    overflow: hidden;
+    &:before {
+      content: "";
+      position: absolute;
+      background: url("http://ali.shahab.pk/blur.php?img=http://ali.shahab.pk/ali-shahab.jpg&x=60") no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: -1;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    }
+    img {
+      border-radius: 100%;
+      overflow: hidden;
+      width: 150px;
+      /*border: 1px solid rgba(255,255,255,.5);*/
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      font-weight: 200;
+      font-size: 42px;
+      color: #444;
+      letter-spacing: -3px;
+      margin: 0;
+      padding: 0;
+    }
+    h2 {
+      font-weight: 400;
+      font-size: 14px;
+      color: #666;
+      letter-spacing: 0.5px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .profile-bio {
+    padding: 0 30px;
+    text-align: center;
+    color: #888;
+  }
+  .profile-social-links {
+    display: table;
+    width: 70%;
+    margin: 20px auto;
+    li {
+      display: table-cell;
+      width: 33.3333333333333333%;
+      a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0 10px;
+        border-radius: 100%;
+        -webkit-transition: box-shadow 0.2s;
+        -moz-transition: box-shadow 0.2s;
+        -o-transition: box-shadow 0.2s;
+        transition: box-shadow 0.2s;
+        &:hover {
+          box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
+        }
+        &:active {
+          box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+        }
+        img {
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+  }
+}
