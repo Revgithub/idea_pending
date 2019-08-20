@@ -73,17 +73,7 @@ body {
 }
 
 button {
-	display: block;
-	position: relative;
-	padding: 10px 0;
-  width: 144px;
-  top: 18px;
-  right: 10px;
-border: 1px solid gainsboro;
-	font-size: 20px;
-	letter-spacing: 0.2px;
-	font-weight: 500;
-background-color: white;
+	display: block;	position: relative;padding: 10px 0;width: 144px; top: 18px;right: 10px;border: 1px solid gainsboro;font-size: 20px;letter-spacing: 0.2px;font-weight: 500;background-color: white;
   color: grey;
   border-right:1px gray
 }
@@ -111,6 +101,12 @@ img {
 {
   width: 25%;
   display: inline-block;
+}
+.contain3
+{
+  width: 25%;
+  display: inline-block;
+  z-index: 100;
 }
 .contain2
 {
@@ -142,6 +138,21 @@ img {
 #contactForm { 
   display: none;
 z-index: 1;
+  border: 6px solid salmon; 
+  padding: 2em;
+  width: 400px;
+  text-align: center;
+  background: #fff;
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%)
+  
+}
+#contactForm1 { 
+  display: none;
+z-index: 3;
   border: 6px solid salmon; 
   padding: 2em;
   width: 400px;
